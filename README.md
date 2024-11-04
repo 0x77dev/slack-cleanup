@@ -1,6 +1,7 @@
 # Slack Cleanup
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2F0x77dev%2Fslack-cleanup.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2F0x77dev%2Fslack-cleanup?ref=badge_shield)
 
 A powerful CLI tool for bulk deletion of Slack messages containing specific phrases. Features interactive and non-interactive modes, with built-in rate limiting and pagination to handle large message volumes efficiently.
 
@@ -27,3 +28,7 @@ Managing Slack integrations can sometimes lead to unexpected message bloat in yo
 docker run -it --rm -e SLACK_CLEANUP_SLACK_TOKEN=<your-slack-bot-token> ghcr.io/0x77dev/
 slack-cleanup:latest
 ```
+
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2F0x77dev%2Fslack-cleanup.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2F0x77dev%2Fslack-cleanup?ref=badge_large)
