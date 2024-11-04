@@ -1,4 +1,4 @@
-# syntax=docker/dockerfile:1.4
+# syntax=docker/dockerfile:1.11
 FROM python:3.11-slim as builder
 
 LABEL org.opencontainers.image.title="Slack Cleanup"
