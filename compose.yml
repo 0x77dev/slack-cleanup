@@ -1,0 +1,11 @@
+services:
+  slack-cleanup:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        BUILDKIT_INLINE_CACHE: 1
+    environment:
+      - SLACK_CLEANUP_SLACK_TOKEN=${SLACK_CLEANUP_SLACK_TOKEN}
+    volumes:
+      - ./.env:/app/.env:ro
