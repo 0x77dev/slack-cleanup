@@ -1,5 +1,5 @@
 # syntax=docker/dockerfile:1.11
-FROM python:3.11-slim as builder
+FROM python:3.13-slim as builder
 
 LABEL org.opencontainers.image.title="Slack Cleanup"
 LABEL org.opencontainers.image.description="A CLI tool for cleaning up Slack messages"
@@ -36,7 +36,7 @@ RUN --mount=type=cache,target=/root/.cache/pypoetry \
 RUN poetry build --format wheel
 
 # Runtime stage
-FROM python:3.11-slim
+FROM python:3.13-slim
 
 LABEL org.opencontainers.image.title="Slack Cleanup"
 LABEL org.opencontainers.image.description="A CLI tool for cleaning up Slack messages"
