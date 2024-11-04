@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "slack-cleanup"
-version = "0.0.0"
+version = "0.2.0"
 description = "A CLI tool for cleaning up Slack messages"
 authors = ["Mykhailo Marynenko <mykhailo@0x77.dev>"]
 license = "MIT"
